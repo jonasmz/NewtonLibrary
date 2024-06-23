@@ -1,3 +1,12 @@
-const message:string = "Hello World"
+import { RestApiServer } from "./Presentation/RestApiServer/rest-api.server";
 
-console.log(message);
+(async()=>{
+    main();
+})();
+
+
+function main(): void{
+    const server = new RestApiServer();
+
+    server.start();
+}
